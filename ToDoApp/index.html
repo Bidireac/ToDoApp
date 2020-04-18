@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-2 card border border-info shadow-lg p-3 my-5 rounded">
+            <div class="card-header bg-white">
+                <h1>Add a new task to the list:</h1>
+                <form id="toDoForm"  class="mt-4">
+                    <input type="text" id="toDoInput" autocomplete="off" class="form-control">
+                    <button class="btn btn-info btn-lg mt-2">Add task</button>
+                </form>
+            </div>
+                <div class="card-title">
+                <h2 class="display-3">Tasks List:</h2>
+                <label for="filter">Search for a specific task:</label>
+                <input type="text" name="filter" id="filter" class="form-control">
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush" id="toDoList"></ul>
+                <button id="clearTasks" class="btn btn-outline-danger btn-lg mt-3">Clear The List <i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/03daa76610.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+

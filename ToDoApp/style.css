@@ -1,0 +1,9 @@
+#toDoInput:focus,
+#filter:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 10px #17a2b8;
+}
+
+#checkTask:focus {
+    outline: none;
+}
